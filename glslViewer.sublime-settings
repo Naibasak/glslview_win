@@ -1,0 +1,8 @@
+{
+	// Path where glslViewer is installed
+	// If is not installed follow the instractions at https://github.com/patriciogonzalezvivo/glslViewer
+	"path": "D:/glslViewer-master/bin/", 
+
+    //  Auto lunch glslViewer when a ".frag" or ".fs" file is open
+    "auto-start": true
+}
