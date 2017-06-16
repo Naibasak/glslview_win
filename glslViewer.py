@@ -12,7 +12,7 @@ version = "0.5.0"
 
 def haveExt(_file,_extentions):
     rta = False
-    if isinstance(_extentions, list): 
+    if isinstance(_extentions, list):
         for ext in _extentions:
             if os.path.splitext(_file)[1] == ext:
                 rta = True
@@ -42,7 +42,7 @@ def OpenShader(view):
                         images.append(file)
                     if haveExt(file, ['.frag','.fs','.vert','.vs','.ply','.obj']):
                         cmd.append(file)
-                    
+
             nTextures = len(view.find_all('uniform sampler2D'))
             if nTextures == 1 and len(images) == 1:
                 cmd.append(images[0])
@@ -77,7 +77,7 @@ def OpenShader(view):
                         return
 
                     sublime.active_window().show_input_panel("Load "+textures[i]+" width: ", images[i % len(images)], done, None, cancel)
-                    
+
                 askForTexture(0)
             else:
                 subprocess.Popen(cmd)
@@ -117,6 +117,7 @@ class InsertShaderToyCommand(sublime_plugin.TextCommand):
         text = "\n\
 #define iResolution u_resolution\n\
 #define iGlobalTime u_time\n\
+#define iMouse u_mouse\n\
 #define iChannel0 u_tex0\n\
 "
         for region in self.view.sel():
