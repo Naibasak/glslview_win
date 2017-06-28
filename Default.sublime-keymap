@@ -1,0 +1,10 @@
+[
+    {
+        "command": "new_shader",
+        "keys": ["ctrl+n+s"]
+    },
+	{
+        "command": "insert_shader_toy",
+        "keys": ["f4"]
+    },
+]
