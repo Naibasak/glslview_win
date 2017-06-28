@@ -1,7 +1,7 @@
 [
     {
         "command": "new_shader",
-        "keys": ["ctrl+n+s"]
+        "keys": ["ctrl+shift+e"]
     },
 	{
         "command": "insert_shader_toy",
