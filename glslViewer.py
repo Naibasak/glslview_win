@@ -7,6 +7,7 @@ import sublime_plugin
 
 import os
 import subprocess
+import re
 
 version = "0.5.0"
 
